@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://8ixp6wngc8cq"]
 
 [ext_resource type="Script" uid="uid://bx7x3gjd6nou6" path="res://scripts/fps_character.gd" id="1_oqvli"]
+[ext_resource type="AudioStream" uid="uid://fn2qlqci8hy1" path="res://assets/SoundBounce.wav" id="2_nhyvu"]
 [ext_resource type="PackedScene" uid="uid://cgowut2h73b2n" path="res://scenes/pistol.tscn" id="2_qqpq4"]
 [ext_resource type="Texture2D" uid="uid://bwpoph73h6pu6" path="res://assets/crosshair.png" id="3_qtl0i"]
 
 [node name="FPSCharacter" type="Node3D" unique_id=100895824]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 script = ExtResource("1_oqvli")
+
+[node name="SoundBounce" type="AudioStreamPlayer" parent="." unique_id=1826989697]
+stream = ExtResource("2_nhyvu")
+bus = &"SFX"
 
 [node name="pistol" parent="." unique_id=789077506 instance=ExtResource("2_qqpq4")]
 transform = Transform3D(-0.10000001, 0, -1.509958e-08, 0, 0.10000001, 0, 1.509958e-08, 0, -0.10000001, 0.56934536, -0.48110515, -0.88200206)
