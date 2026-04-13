@@ -2,21 +2,18 @@
 
 [ext_resource type="PackedScene" uid="uid://daaciysl6usvu" path="res://scenes/bench.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://b4wcpqy6i84mu" path="res://scenes/coin.tscn" id="2_sugp2"]
-[ext_resource type="PackedScene" uid="uid://cgowut2h73b2n" path="res://scenes/pistol.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://8ixp6wngc8cq" path="res://scenes/fps_character.tscn" id="3_sugp2"]
 
 [node name="Main" type="Node3D" unique_id=506848217]
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=733921488]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6044168, 2.568659)
 
 [node name="bench" parent="." unique_id=599877967 instance=ExtResource("1_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1411506, 0, 1.1216176)
 
 [node name="coin" parent="." unique_id=2021128122 instance=ExtResource("2_sugp2")]
-transform = Transform3D(-1.4099643e-09, 0, -0.1, 0, 0.1, 0, 0.032256223, 0, -4.371139e-09, 0.024028063, 1.3943375, 1.1604388)
+transform = Transform3D(-6.5567085e-09, 0, -0.15, 0, 0.15, 0, 0.15, 0, -6.5567085e-09, 0.024028063, 1.5100251, 1.1604388)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1836740033]
 transform = Transform3D(0.30815953, -0.3190751, 0.8962304, 0.10374905, 0.94772947, 0.30173674, -0.9456606, 0, 0.3251556, 2.213611, 2.7944446, 0.20422006)
 
-[node name="pistol" parent="." unique_id=789077506 instance=ExtResource("3_sugp2")]
-transform = Transform3D(-0.04, 0, -6.0398317e-09, 0, 0.04, 0, 6.0398317e-09, 0, -0.04, 0.19164956, 1.3126593, 2.268135)
+[node name="FPSCharacter" parent="." unique_id=100895824 instance=ExtResource("3_sugp2")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 1.5063068, 2.791333)

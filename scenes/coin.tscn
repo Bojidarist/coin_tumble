@@ -6,7 +6,25 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11l1o"]
 albedo_texture = ExtResource("2_i64fm")
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i64fm"]
+
 [node name="coin" unique_id=2021128122 instance=ExtResource("1_rwqht")]
 
 [node name="Coin_tris" parent="Armature/Skeleton3D" parent_id_path=PackedInt32Array(22259027) index="0" unique_id=755601485]
 material_override = SubResource("StandardMaterial3D_11l1o")
+
+[node name="CoinLeft" type="Area3D" parent="." index="1" unique_id=1909225814]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CoinLeft" index="0" unique_id=1894226331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.52244186)
+shape = SubResource("CapsuleShape3D_i64fm")
+
+[node name="CoinRight" type="Area3D" parent="." index="2" unique_id=1135972700]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CoinRight" index="0" unique_id=1820049799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.51856434)
+shape = SubResource("CapsuleShape3D_i64fm")
