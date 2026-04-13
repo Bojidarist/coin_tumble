@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bybhs1mlv3ubt"]
+
+[ext_resource type="PackedScene" uid="uid://6y0vygr13d51" path="res://assets/bulletShell.fbx" id="1_ldk11"]
+
+[node name="bulletShell" unique_id=2089343296 instance=ExtResource("1_ldk11")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="Shell" parent="." index="0" unique_id=171104275]
+transform = Transform3D(25.910833, 0, 0, 0, 25.910833, -2.1301926e-06, 0, 1.1325985e-06, 48.733128, 0, 0, 0.21)

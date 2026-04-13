@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cgowut2h73b2n"]
+
+[ext_resource type="PackedScene" uid="uid://d1tkfejey8sxw" path="res://assets/pistol.fbx" id="1_igbvm"]
+
+[node name="pistol" unique_id=789077506 instance=ExtResource("1_igbvm")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="Frame" parent="." index="2" unique_id=537694031]
+transform = Transform3D(57.85871, 0, 0, 0, -4.3711384e-06, 99.99999, 0, -99.99999, -4.3711384e-06, 0, 2.5247614, -0.79267776)

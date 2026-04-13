@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b4wcpqy6i84mu"]
+
+[ext_resource type="PackedScene" uid="uid://i6org0x8gtte" path="res://assets/coin.fbx" id="1_rwqht"]
+[ext_resource type="Texture2D" uid="uid://b87trf3law775" path="res://assets/coinC_2.png" id="2_i64fm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11l1o"]
+albedo_texture = ExtResource("2_i64fm")
+
+[node name="coin" unique_id=2021128122 instance=ExtResource("1_rwqht")]
+
+[node name="Coin_tris" parent="Armature/Skeleton3D" parent_id_path=PackedInt32Array(22259027) index="0" unique_id=755601485]
+material_override = SubResource("StandardMaterial3D_11l1o")
